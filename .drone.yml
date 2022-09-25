@@ -11,6 +11,9 @@ steps:
       password:
         from_secret: DOCKER_REGISTRY_PASSWD
       repo: r.s8k.top/se-docs
+    when:
+      branch:
+        - master
   - name: Deploy
     image: plugins/webhook
     settings:
@@ -18,3 +21,6 @@ steps:
       urls: https://deploy.s8k.top/api/services/se-docs/deploy
       headers:
         from_secret: COMPOSE_DEPLOYER_SECRET_HEADER
+    when:
+      branch:
+        - master
