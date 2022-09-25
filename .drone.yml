@@ -3,7 +3,7 @@ type: docker
 name: default
 
 steps:
-- name: docker
+- name: Build and publish docker image
   image: plugins/docker
   settings:
     registry: r.s8k.top
@@ -11,3 +11,11 @@ steps:
     password:
       from_secret: DOCKER_REGISTRY_PASSWD
     repo: r.s8k.top/se-docs
+- name: Deploy
+  image: plugins/webhook
+  settings:
+    method: POST
+    urls: https://deploy.s8k.top/api/services/se-docs/deploy
+    headers:
+      Authorization:
+        from_secret: COMPOSE_DEPLOYER_SECRET
