@@ -2,6 +2,12 @@ kind: pipeline
 type: docker
 name: default
 
+trigger:
+  event:
+    - push
+  branch:
+    - master
+
 steps:
   - name: docker
     image: plugins/docker
@@ -28,3 +34,21 @@ steps:
         - master
     depends_on:
       - docker
+
+---
+kind: pipeline
+type: docker
+name: default
+
+triger:
+  event:
+    - pr
+  branch:
+    - master
+
+steps:
+  - name: check
+    image: plugins/docker
+    repo: docs-test
+    dry_run: true
+
