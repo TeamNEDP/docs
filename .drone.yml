@@ -42,12 +42,11 @@ name: default
 
 triger:
   event:
-    - pr
-  branch:
-    - master
+    - pull_request
 
 steps:
   - name: check
     image: plugins/docker
     repo: docs-test
     dry_run: true
+
