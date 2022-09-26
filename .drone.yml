@@ -42,9 +42,7 @@ name: default
 
 triger:
   event:
-    - pr
-  branch:
-    - master
+    - pull_request
 
 steps:
   - name: check
