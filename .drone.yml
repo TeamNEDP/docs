@@ -1,6 +1,6 @@
 kind: pipeline
 type: docker
-name: default
+name: publish
 
 trigger:
   event:
@@ -17,11 +17,6 @@ steps:
       password:
         from_secret: DOCKER_REGISTRY_PASSWD
       repo: r.s8k.top/se-docs
-    when:
-      branch:
-        - master
-      event:
-        - push
   - name: deploy
     image: plugins/webhook
     settings:
@@ -29,24 +24,24 @@ steps:
       urls: https://deploy.s8k.top/api/services/se-docs/deploy
       headers:
         from_secret: COMPOSE_DEPLOYER_SECRET_HEADER
-    when:
-      branch:
-        - master
     depends_on:
       - docker
 
 ---
 kind: pipeline
 type: docker
-name: pull_request
+name: check
 
 triger:
   event:
-    - pull_request
+    - push
+  branch:
+    exclude:
+      - master
 
 steps:
   - name: check
     image: plugins/docker
-    repo: docs-test
-    dry_run: true
-
+    settings:
+      repo: docs-test
+      dry_run: true
