@@ -38,7 +38,7 @@ steps:
 ---
 kind: pipeline
 type: docker
-name: default
+name: pull_request
 
 triger:
   event:
