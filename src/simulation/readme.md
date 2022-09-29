@@ -2,10 +2,16 @@
 
 1. 概念 
 
-
 2. 游戏规则
 
 
-3. 脚本 API
-4. 信息中⼼接⼝
-	(websocket)
+
+java
+
+3. 脚本 API (javascript)
+
+4. 信息中⼼接⼝ (websocket)
+
+两周内，选型选完，后面再开始写
+
+simulation -> data-center -> frontend
