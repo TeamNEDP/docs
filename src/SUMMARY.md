@@ -5,4 +5,6 @@
 - [数据中心](./data-center/readme.md)
   - [用户系统](./data-center/00.user.md)
 - [游戏模拟](./simulation/readme.md)
-  - [test](./simulation/test.md)
+  - [基础概念](./simulation/concept.md)
+  - [游戏规则](./simulation/test.md)
+  
