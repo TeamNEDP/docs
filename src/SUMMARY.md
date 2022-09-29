@@ -6,4 +6,4 @@
   - [用户系统](./data-center/00.user.md)
 - [游戏模拟](./simulation/readme.md)
   - [基础概念](./simulation/concept.md)
-  - [游戏规则](./simulation/test.md)
+  - [游戏规则](./simulation/rules.md)
