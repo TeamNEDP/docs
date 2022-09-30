@@ -8,3 +8,5 @@ src = "src"
 [output.katex]
 
 [preprocessor.katex]
+
+[output.html]
