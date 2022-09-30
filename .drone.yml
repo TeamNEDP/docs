@@ -18,6 +18,7 @@ steps:
         from_secret: DOCKER_REGISTRY_PASSWD
       repo: r.s8k.top/se-docs
       purge: false
+      pull_image: false
   - name: deploy
     image: plugins/webhook
     settings:
@@ -51,4 +52,5 @@ steps:
       repo: docs-test
       purge: false
       dry_run: true
+      pull_image: false
 
