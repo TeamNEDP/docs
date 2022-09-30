@@ -1,8 +1,8 @@
-FROM peaceiris/mdbook:v0.4.21 AS build
+FROM r.s8k.top/mdbook-katex AS build
 WORKDIR /book/
 COPY . /book/
 RUN mdbook build
 
 FROM alpine:latest
-COPY --from=build /book/book/ /book
+COPY --from=build /book/book/html /book
 ENTRYPOINT sh -c "rm -rf /data/* && cp -r /book/* /data/"
