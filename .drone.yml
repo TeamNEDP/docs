@@ -44,6 +44,10 @@ steps:
   - name: check
     image: plugins/docker
     settings:
+      registry: r.s8k.top
+      username: docker
+      password:
+        from_secret: DOCKER_REGISTRY_PASSWD
       repo: docs-test
       purge: false
       dry_run: true
