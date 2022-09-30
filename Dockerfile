@@ -1,5 +1,4 @@
-FROM rust:bullseye AS build
-RUN cargo install mdbook && cargo install --git "https://github.com/lzanini/mdbook-katex"
+FROM r.s8k.top/mdbook-katex AS build
 WORKDIR /book/
 COPY . /book/
 RUN mdbook build
