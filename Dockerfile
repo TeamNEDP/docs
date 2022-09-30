@@ -1,4 +1,5 @@
-FROM peaceiris/mdbook:v0.4.21 AS build
+FROM peaceiris/mdbook:v0.4.21-rust AS build
+RUN cargo install --git "https://github.com/lzanini/mdbook-katex"
 WORKDIR /book/
 COPY . /book/
 RUN mdbook build
