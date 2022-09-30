@@ -18,6 +18,8 @@ steps:
         from_secret: DOCKER_REGISTRY_PASSWD
       repo: r.s8k.top/se-docs
       purge: false
+      cache_from:
+        - r.s8k.top/se-docs
   - name: deploy
     image: plugins/webhook
     settings:
@@ -47,4 +49,6 @@ steps:
       repo: docs-test
       purge: false
       dry_run: true
+      cache_from:
+        - r.s8k.top/se-docs
 
