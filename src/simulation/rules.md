@@ -36,6 +36,10 @@
 3. 王冠：继承占领城堡规则。
 当玩家 PlayerA 的王冠被玩家 PlayerB 占领时，PlayerA 剩余所有领地均变为 PlayerB 领地，设 $k_i$ 为 PlayerA 第 $i$ 块领地的士兵数量，$k_i$ 变为 $\lfloor{k_i/2}\rfloor$。
 
+### 操作合法性
+
+TODO.
+
 ## 游戏结束条件
 
 |种类|描述|
