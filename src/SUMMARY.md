@@ -7,3 +7,4 @@
 - [游戏模拟](./simulation/readme.md)
   - [基础概念](./simulation/concept.md)
   - [游戏规则](./simulation/rules.md)
+  - [脚本 API](./simulation/API.md)
