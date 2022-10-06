@@ -41,7 +41,7 @@ interface GameUser {
 interface GameSetting {
   id: string;
   map: GameMap;
-  users: GameUser[];
+  users: { r: GameUser; b: GameUser };
 }
 ```
 
@@ -84,7 +84,7 @@ interface UserGameStat {
 
 interface GameResult {
   winner: "R" | "B";
-  rStat: UserGameStat;
-  bStat: UserGameStat;
+  r_stat: UserGameStat;
+  b_stat: UserGameStat;
 }
 ```
