@@ -4,7 +4,7 @@
 
 ```ts
 // 分别代表：红方皇冠、蓝方皇冠、城堡、山地、空地、领地
-type GridType = 'R' | 'B' | 'C' | 'M' | 'V' | 'L';
+type GridType = 'R' | 'B' | 'C' | 'M' | 'V' | 'LR' | 'LB' | 'F' | 'MF';
 
 interface MapGrid {
 	type: GridType;
@@ -54,7 +54,6 @@ interface MoveAction {
 	y: number;
 	amount: number;
 	movement: 'U' | 'D' | 'L' | 'R';
-	valid: boolean;
 }
 
 type GameAction = MoveAction | null;
@@ -69,6 +68,7 @@ interface GameTick {
 	operator: 'R' | 'B';
 	changes: GridChange[];
 	action: GameAction;
+	action_valid: boolean;
 }
 ```
 
