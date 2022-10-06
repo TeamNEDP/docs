@@ -8,4 +8,6 @@
 - [游戏模拟](./simulation/readme.md)
   - [基础概念](./simulation/concept.md)
   - [游戏规则](./simulation/rules.md)
-  - [脚本 API](./simulation/API.md)
+  - [信息交换格式](./simulation/schema.md)
+  - [信息交换协议](./simulation/protocol.md)
+  - [脚本 API](./simulation/script-api.md)
