@@ -6,9 +6,9 @@
 
 ```ts
 interface GameStat {
-	map: GameMap;
-	enemy_soldiers: number;
-	enemy_lands: number;
+  map: GameMap;
+  enemy_soldiers: number;
+  enemy_lands: number;
 }
 ```
 

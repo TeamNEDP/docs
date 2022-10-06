@@ -12,8 +12,8 @@
 
 ```ts
 interface Message<T> {
-	event: string;
-	data: T;
+  event: string;
+  data: T;
 }
 ```
 
@@ -21,13 +21,13 @@ interface Message<T> {
 
 ```ts
 interface AuthData {
-	slots: number;
-	token: string;
+  slots: number;
+  token: string;
 }
 
 interface AuthMessage {
-	event: "auth";
-	data: AuthData;
+  event: "auth";
+  data: AuthData;
 }
 ```
 
@@ -35,8 +35,8 @@ interface AuthMessage {
 
 ```ts
 interface GameStartMessage {
-	event: "gameStart";
-	data: GameSetting;
+  event: "gameStart";
+  data: GameSetting;
 }
 ```
 
@@ -44,8 +44,8 @@ interface GameStartMessage {
 
 ```ts
 interface GameUpdateMessage {
-	event: "gameUpdate";
-	data: GameTick;
+  event: "gameUpdate";
+  data: GameTick;
 }
 ```
 
@@ -53,7 +53,7 @@ interface GameUpdateMessage {
 
 ```ts
 interface GameEndMessage {
-	event: "gameEnd";
-	data: GameResult;
+  event: "gameEnd";
+  data: GameResult;
 }
 ```
