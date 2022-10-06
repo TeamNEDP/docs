@@ -55,5 +55,4 @@ interface GameUpdateMessage {
 interface GameEndMessage {
   event: "gameEnd";
   data: GameResult;
-}
 ```
