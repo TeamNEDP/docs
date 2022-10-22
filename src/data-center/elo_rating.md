@@ -39,7 +39,7 @@ $E_{A}：$​A选手的预测胜利概率
 
 ## 实现
 
-```ts
+```
 class Elorating:
     ELO_RESULT_WIN = 1
     ELO_RESULT_LOSS = -1
