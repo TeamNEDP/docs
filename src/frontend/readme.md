@@ -4,43 +4,54 @@
 
 ### Navigation
 
-Icon, Home, Contest, Rank, Battle History, Login (Right side)
-
-|   Name   |   router   |
+|   Name   |   Router   |
 | :------: | :------: |
-|  Icon  | `\index` |
-|  Home  | `\index` |
-| Contest | `\contest` |
-| Rank |  `\rank`  |
-| Battle History |  `\history`  |
-| Login |  `\login`  |
+|  Icon  | `/index` |
+|  Home  | `/index` |
+| Contest | `/contest` |
+| Rank |  `/rank`  |
+| Battle History |  `/history`  |
+| Login |  `/login`  |
 
 ## Login
 
-Username, Password
-
-Login Button, Sign Up button
+|   Name   |   Type   | Description |
+| :------: | :------: | :-: |
+|  Username  | Input Box | input username |
+|  Password  | Input Box | input password |
+| Login | Button | POST send message |
+| Sign up |  Button  | POST send message |
 
 ## Contest
 
-Pending list
-
-History List
+|   Name   |   Type   | Description |
+| :------: | :------: | :-: |
+|  Running Contests  | Container | detailed |
+|  Pending Contests  | list | simplified |
+|  History Contests  | list | simplified |
 
 ## Profile
 
-Contest History
-
-Code History
-
-Rank and score
+|   Name   |   Type   |
+| :------: | :------: |
+|  avatar  | image |
+|  rating and rank  | list |
+|  Contest History  | clickable text |
+|  Code Repository  | clickable text |
 
 ## Rank
 
-Ranklist Column
+|   Name   |   Type   |
+| :------: | :------: |
+|  Rank column  | list |
 
 ## Battle
 
 Own side profile, Counter side profile
 
 Battle list
+
+|   Name   |   Type   |
+| :------: | :------: |
+|  Own and Counter side profile  | column( image + list ) |
+|  Game render  | container |
