@@ -47,10 +47,6 @@
 
 ## Battle
 
-Own side profile, Counter side profile
-
-Battle list
-
 |   Name   |   Type   |
 | :------: | :------: |
 |  Own and Counter side profile  | column( image + list ) |
