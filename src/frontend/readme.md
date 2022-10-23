@@ -12,6 +12,7 @@
 | Rank |  `/rank`  |
 | Battle History |  `/history`  |
 | Login |  `/login`  |
+| Avatar | `/profile` |
 
 ## Login
 
