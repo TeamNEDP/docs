@@ -6,6 +6,7 @@
   - [用户系统](./data-center/00.user.md)
   - [用户脚本](./data-center/01.user-script.md)
   - [游戏管理](./data-center/02.games.md)
+  - [匹配算法](./data-center/03.matching-method.md)
 - [游戏模拟](./simulation/readme.md)
   - [基础概念](./simulation/concept.md)
   - [游戏规则](./simulation/rules.md)

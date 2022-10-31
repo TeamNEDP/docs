@@ -38,11 +38,35 @@ generals.io 是一款多人在线棋类游戏，玩家可以在游戏中控制�
 
 ## 思维导图
 
-<!--TODO-->
+<!-- WARNING: 橡木名字还没填进去 -->
+
+![Mindmap](./picture/mindmap.png)
 
 ## 界面原型
 
-<!--TODO-->
+### 主页
+
+![Mindmap](./picture/Index.png)
+
+### 赛事大厅
+
+![Mindmap](./picture/Contest.png)
+
+### 排行榜
+
+![Mindmap](./picture/Rank.png)
+
+### 战斗历史
+
+![Mindmap](./picture/History.png)
+
+### 登录与注册
+
+![Mindmap](./picture/Login.png)
+
+### 个人资料页
+
+![Mindmap](./picture/Profile.png)
 
 ## 功能描述
 
