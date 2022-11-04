@@ -88,3 +88,7 @@ interface GameResult {
   b_stat: UserGameStat;
 }
 ```
+
+## UML
+
+![Class](Class.jpg)
