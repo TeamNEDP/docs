@@ -91,4 +91,4 @@ interface GameResult {
 
 ## UML
 
-![Class](Class.jpg)
+![Class](uml.jpg)
