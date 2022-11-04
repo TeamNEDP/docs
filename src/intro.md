@@ -49,6 +49,9 @@ Valyria 的用户画像是：
 ### 游戏模拟
 ![UML](./simulation/uml.jpg)
 
+### 前端页面
+
+![UML](./frontend/uml.svg)
 ## 思维导图
 
 ![Mindmap](./picture/mindmap.png)
