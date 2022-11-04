@@ -42,16 +42,17 @@ Valyria 的用户画像是：
 
 ## 类图
 
+### 前端页面
+
+![UML](./frontend/uml.svg)
+
 ### 数据中心
 
 ![UML](./data-center/uml.svg)
 
 ### 游戏模拟
-![UML](./simulation/uml.jpg)
+![UML](./simulation/uml.svg)
 
-### 前端页面
-
-![UML](./frontend/uml.svg)
 ## 思维导图
 
 ![Mindmap](./picture/mindmap.png)
