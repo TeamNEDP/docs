@@ -44,8 +44,10 @@ Valyria 的用户画像是：
 
 ### 数据中心
 
+![UML](./data-center/uml.svg)
+
 ### 游戏模拟
-![CLASS](./simulation/Class.jpg)
+![UML](./simulation/uml.jpg)
 
 ## 思维导图
 
