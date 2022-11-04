@@ -42,7 +42,10 @@ Valyria 的用户画像是：
 
 ## 类图
 
-![CLASS](./picture/Class.jpg)
+### 数据中心
+
+### 游戏模拟
+![CLASS](./simulation/Class.jpg)
 
 ## 思维导图
 
