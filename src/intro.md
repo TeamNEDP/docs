@@ -79,7 +79,7 @@ Valyria 为用户提供了分享链接的功能，用户可以将对局的链接
 ![UML](./data-center/uml.svg)
 
 ### 游戏模拟
-![UML](./simulation/uml.svg)
+![UML](./simulator/uml.svg)
 
 ## 思维导图
 
