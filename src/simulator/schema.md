@@ -39,7 +39,6 @@ interface GameUser {
 
 ```ts
 interface GameSetting {
-  id: string;
   map: GameMap;
   users: { r: GameUser; b: GameUser };
 }
