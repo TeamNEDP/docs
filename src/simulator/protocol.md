@@ -34,25 +34,40 @@ interface AuthMessage {
 ### 游戏开始(D2S)
 
 ```ts
+interface GameStartData {
+  id: string;
+  setting: GameSetting;
+}
+
 interface GameStartMessage {
   event: "gameStart";
-  data: GameSetting;
+  data: GameStartData;
 }
 ```
 
 ### 游戏更新(S2D)
 
 ```ts
+interface GameUpdateData {
+  id: string;
+  tick: GameTick;
+}
+
 interface GameUpdateMessage {
   event: "gameUpdate";
-  data: GameTick;
+  data: GameUpdateData;
 }
 ```
 
 ### 游戏结束(S2D)
 
 ```ts
+interface GameEndData {
+  id: string;
+  result: GameResult;
+}
+
 interface GameEndMessage {
   event: "gameEnd";
-  data: GameResult;
+  data: GameEndData;
 ```
