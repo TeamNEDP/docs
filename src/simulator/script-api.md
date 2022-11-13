@@ -16,4 +16,8 @@ interface GameStat {
 
 ### Tick
 
-模拟器每 tick 会调用用户脚本中的 `Tick` 函数，参数为 `GameStat` 对象，用户脚本应返回 `MoveAction` 对象。
+模拟器每 tick 会调用用户脚本中的 `Tick` 函数，参数为 `color` 字符串及 `GameStat` 对象，其中 `color` 字符串表示玩家颜色是 `r` 或者 `b`。
+
+用户脚本应返回 `MoveAction` 对象。
+
+例： `Tick(color, GameStat)`
