@@ -20,4 +20,4 @@ interface GameStat {
 
 用户脚本应返回 `MoveAction` 对象。
 
-例： `Tick("R", GameStat)`
+例： `Tick(color, GameStat)`
