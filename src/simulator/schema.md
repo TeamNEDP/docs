@@ -82,7 +82,7 @@ interface UserGameStat {
 }
 
 interface GameResult {
-  winner: "R" | "B";
+  winner: "R" | "B" | "D";
   r_stat: UserGameStat;
   b_stat: UserGameStat;
 }
