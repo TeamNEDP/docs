@@ -2,12 +2,12 @@ function Random(min, max) {
     return Math.round(Math.random() * (max - min)) + min;
 }
 
-function Check(GameMap, now) {
-    if (GameMap.grids[now].type !== "M" && GameMap.grids[now].type !== "MF") return 1;
-    return 0;
-}
+// function Check(GameStat, now) {
+//     if (GameStat.grids[now].type !== "M" && GameStat.grids[now].type !== "MF") return 1;
+//     return 0;
+// }
 
-function Tick(GameStat) {
+function Tick(color, GameStat) {
     var moveAction = {
 		x: 0,
 		y: 0,
@@ -26,7 +26,9 @@ function Tick(GameStat) {
         var w = Random(0, GameMap.width - 1), h = Random(0, GameMap.height - 1);
         var stw = w;
         var sth = h;
-        if (!Check(GameMap, w * GameMap.height + h)) continue;
+        var now = w * GameMap.height + h;
+        if (GameMap.grids[now].type === "MF" || GameMap.grids[now].type === "M")
+            continue;
         if (GameMap.grids[w * GameMap.height + h].soldiers == 0) continue;
         if (movement === "U") {
             w --;
@@ -37,7 +39,9 @@ function Tick(GameStat) {
         } else {
             h ++;
         }
-        if (Check(GameMap, w * GameMap.height + h) && w >= 0 && w < GameMap.width && h >= 0 && h < GameMap.height) 
+        now = w * GameMap.height + h;
+        if (GameMap.grids[now].type !== "MF" && GameMap.grids[now].type !== "M"
+            && w >= 0 && w < GameMap.width && h >= 0 && h < GameMap.height) 
             ok = 0;
         if (!ok) {
             moveAction.x = stw, moveAction.y = sth;
