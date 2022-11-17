@@ -102,7 +102,7 @@ function Tick(user, GameStat) {
     }
     var w = -1 ,h = -1;
     for (var i = 0; i < GameMap.height * GameMap.width; i++) {
-        if (GameMap.grids[i].type === user || GameMap.grids[now].type === "L" + user || GameMap.grids[now].type === "C" + user) {
+        if (GameMap.grids[i].type === user || GameMap.grids[i].type === "L" + user || GameMap.grids[i].type === "C" + user) {
             if(w === -1)
             {
                 w = i / GameMap.height;
