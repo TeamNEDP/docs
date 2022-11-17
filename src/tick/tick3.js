@@ -137,31 +137,31 @@ function Tick(user, GameStat) {
 
 
 
-var stat = {
-    "map": {
-        "width": 5,
-        "height": 5,
-        "grids": [{"type": "R", "soldiers": 6}, {"type": "V", "soldiers": 0}, {
-            "type": "F",
-            "soldiers": 27
-        }, {"type": "F", "soldiers": 0}, {"type": "F", "soldiers": 0}, {"type": "C", "soldiers": 16}, {
-            "type": "C",
-            "soldiers": 19
-        }, {"type": "F", "soldiers": 0}, {"type": "F", "soldiers": 0}, {"type": "F", "soldiers": 0}, {
-            "type": "F",
-            "soldiers": 0
-        }, {"type": "F", "soldiers": 0}, {"type": "F", "soldiers": 0}, {"type": "F", "soldiers": 0}, {
-            "type": "F",
-            "soldiers": 0
-        }, {"type": "F", "soldiers": 0}, {"type": "F", "soldiers": 0}, {"type": "F", "soldiers": 0}, {
-            "type": "F",
-            "soldiers": 0
-        }, {"type": "F", "soldiers": 0}, {"type": "F", "soldiers": 0}, {"type": "F", "soldiers": 0}, {
-            "type": "F",
-            "soldiers": 0
-        }, {"type": "F", "soldiers": 19}, {"type": "MF", "soldiers": 0}]
-    }, "enemy_soldiers": 0, "enemy_lands": 0
-};
+// var stat = {
+//     "map": {
+//         "width": 5,
+//         "height": 5,
+//         "grids": [{"type": "R", "soldiers": 6}, {"type": "V", "soldiers": 0}, {
+//             "type": "F",
+//             "soldiers": 27
+//         }, {"type": "F", "soldiers": 0}, {"type": "F", "soldiers": 0}, {"type": "C", "soldiers": 16}, {
+//             "type": "C",
+//             "soldiers": 19
+//         }, {"type": "F", "soldiers": 0}, {"type": "F", "soldiers": 0}, {"type": "F", "soldiers": 0}, {
+//             "type": "F",
+//             "soldiers": 0
+//         }, {"type": "F", "soldiers": 0}, {"type": "F", "soldiers": 0}, {"type": "F", "soldiers": 0}, {
+//             "type": "F",
+//             "soldiers": 0
+//         }, {"type": "F", "soldiers": 0}, {"type": "F", "soldiers": 0}, {"type": "F", "soldiers": 0}, {
+//             "type": "F",
+//             "soldiers": 0
+//         }, {"type": "F", "soldiers": 0}, {"type": "F", "soldiers": 0}, {"type": "F", "soldiers": 0}, {
+//             "type": "F",
+//             "soldiers": 0
+//         }, {"type": "F", "soldiers": 19}, {"type": "MF", "soldiers": 0}]
+//     }, "enemy_soldiers": 0, "enemy_lands": 0
+// };
 
 
-Tick("R", stat);
+// console.log(Tick("R", stat));
