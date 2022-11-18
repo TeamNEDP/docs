@@ -33,10 +33,10 @@ function solveGreedy(w, h) {
 			moveAction.y = h;
 			moveAction.movement = move[i];
 			moveAction.amount = Random(1, GameMap.grids[w * GameMap.height + h].soldiers - 1);
-			return true;
+			return;
 		}
 	}
-	return false;
+	return;
 }
 
 function Tick(user, GameStat) {
@@ -55,9 +55,10 @@ function Tick(user, GameStat) {
 	}
 
 
-	if (enemyW === -1) 
-	{
-		toW = toH = -1;
+	toW = toH = -1;
+	if (enemyW !== -1) {
+		toW = enemyW; toH = enemyH;
+	} else {
 		if (toW === -1)
 			for (var i = 0; i < GameMap.height * GameMap.width; i++) {
 				if (GameMap.grids[i].type === "L" + enemy || GameMap.grids[i].type === "C" + enemy) {
@@ -75,7 +76,7 @@ function Tick(user, GameStat) {
 					break;
 				}
 			}
-		
+
 		if (toW === -1)
 			for (var i = 0; i < GameMap.height * GameMap.width; i++) {
 				if (GameMap.grids[i].type === "V") {
@@ -92,26 +93,16 @@ function Tick(user, GameStat) {
 			if (w === -1) {
 				w = i / GameMap.height;
 				h = i % GameMap.height;
-			}
-			else if (GameMap.grids[i].soldiers > GameMap.grids[w * GameMap.height + h].soldiers) {
+			} else if (GameMap.grids[i].soldiers > GameMap.grids[w * GameMap.height + h].soldiers) {
 				w = i / GameMap.height;
 				h = i % GameMap.height;
 			}
 		}
 	}
-	while (233) {
-		var now = w * GameMap.height + h;
-		if (GameMap.grids[now].type === "MF" || GameMap.grids[now].type === "M")
-			continue;
-		if (GameMap.grids[now].type !== user && GameMap.grids[now].type !== "L" + user && GameMap.grids[now].type !== "C" + user)
-			continue;
-		if (GameMap.grids[now].soldiers === 0)
-			continue;
-		
-		// console.log("w: " + w + " h: " + h);
 
-		if (solveGreedy(w, h)) break;
-	}
+	// console.log("w: " + w + " h: " + h);
+
+	solveGreedy(w, h);
 
 	return moveAction;
 }
@@ -122,10 +113,10 @@ function Tick(user, GameStat) {
 //     "map": {
 //         "width": 5,
 //         "height": 5,
-//         "grids": [{"type": "R", "soldiers": 6}, {"type": "V", "soldiers": 0}, {
+//         "grids": [{"type": "R", "soldiers": 6}, {"type": "C", "soldiers": 0}, {
 //             "type": "F",
 //             "soldiers": 27
-//         }, {"type": "F", "soldiers": 0}, {"type": "F", "soldiers": 0}, {"type": "C", "soldiers": 16}, {
+//         }, {"type": "F", "soldiers": 0}, {"type": "F", "soldiers": 0}, {"type": "V", "soldiers": 16}, {
 //             "type": "C",
 //             "soldiers": 19
 //         }, {"type": "F", "soldiers": 0}, {"type": "F", "soldiers": 0}, {"type": "F", "soldiers": 0}, {

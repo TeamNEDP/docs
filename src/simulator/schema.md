@@ -67,6 +67,7 @@ interface GameTick {
   changes: GridChange[];
   action: GameAction;
   action_valid: boolean;
+  action_error: string;
 }
 ```
 
