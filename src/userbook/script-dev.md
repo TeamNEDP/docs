@@ -31,19 +31,34 @@ yarn install
 
 ## 开始编写
 
-在本环境下，你可以使用 API 相关的代码补全。
+在本环境下，你可以使用 API 相关的类型推断和代码补全。
 
-但是**更方便**的是，你可以利用 `npm` 命令从网络上下载到一些算法的实现。
+但是**更方便**的是，你可以利用 `npm` 命令依赖 `node` 包或是网络上的一些算法实现。
 
 对于这一特性，这里是一个例子：
 
+### Example
+
 假设你需要用到经典的 $dijkstra$ 算法，你进入到了[官网](https://www.npmjs.com/)搜索。
 
-(这里应该是一个 gif)
+（这里应该是一个 gif）
 
+从[官网](https://www.npmjs.com/package/dijkstra?activeTab=readme)上你得知可以通过 `npm i dijkstra` 安装这一实现，于是你在控制台输入：
 
+```
+npm i dijkstra
+```
 
-假设你完成了你的 Valyria 脚本，现在你要将他输出为可以上传到脚本仓库的脚本，在终端输入：
+现在你在 `tick.js` 里就能使用 $dijkstra$ 相关内容了。
+
+（这里应该是一个代码补全的 gif）
+
+## 打包输出
+
+现在你完成了你的 Valyria 脚本，现在你要将它打包为可以上传到 Valyria 脚本仓库的脚本，在终端输入：
+
 ```
 yarn build
 ```
+
+这时你的脚本就会打包输出到 `./main.js` 里，将其中内容上传到 Valyria 脚本仓库就完成了一个开发过程。
