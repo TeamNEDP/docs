@@ -43,10 +43,10 @@ yarn install
 
 （这里应该是一个 gif）
 
-从[官网](https://www.npmjs.com/package/dijkstra?activeTab=readme)上你得知可以通过 `npm i dijkstra` 安装这一实现，于是你在控制台输入：
+从[官网](https://www.npmjs.com/package/dijkstra?activeTab=readme)上你得知可以通过 `yarn add dijkstra` 安装这一实现，于是你在控制台输入：
 
 ```
-npm i dijkstra
+yarn add dijkstra
 ```
 
 现在你在 `tick.js` 里就能使用 $dijkstra$ 相关内容了。
